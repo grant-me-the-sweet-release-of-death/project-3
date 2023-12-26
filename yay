@@ -1,0 +1,48 @@
+<svg width="580" height="200" viewBox="0 0 580 200"
+<g id="car-dodger" transform="scale(1)">
+    <!-- контур крыши и кузова автомобиля -->
+      <rect x="70" y="10" width="220" height="130" fill="transparent" rx="150" stroke="firebrick" stroke-width="10" />
+    <!-- фонарь красный -->
+	<circle r="10px" fill="crimson" cx="15" cy="90" />
+	
+    <!-- сама машина -->
+      <rect x="10" y="70" width="340" height="80" fill=“firebrick” rx="30" />
+      
+    <g>
+    <!-- стекло 1 -->
+      <line x1="145" y1="10" x2="145" y2="80" stroke="firebrick" stroke-width="10"/>
+
+    <!-- стекло 2 -->
+      <line x1="215" y1="10" x2="215" y2="80" stroke="firebrick" stroke-width="10"/>
+    </g>
+  
+  
+  
+    <!-- левое колесо  -->
+    <g stroke-dasharray="6.28 6.28">
+      <circle r="40px" fill="#222" stroke="white" stroke-width="4" cx="90" cy="140"/>    
+		<animateTransform
+       attributeName="transform" 
+       type="rotate"
+       values="0 90 140;360 90 140"
+       dur="2s" repeatCount="3" />
+     </g>
+
+     <!-- правое колесо -->
+    <g stroke-dasharray="6.28 6.28">
+      <circle r="40px" fill="#222" stroke="white" stroke-width="4" cx="270" cy="140"/>
+	   <animateTransform
+       attributeName="transform"
+       type="rotate"
+       values="0 270 140;360 270 140"
+       dur="2s" repeatCount="3" />
+	  </g>  
+
+    <g>
+    <!-- фонарь желтый -->
+      <circle r=“25px" fill="gold" cx="340" cy="90"/>
+      
+       </g>  
+	</g>
+</svg>
+
